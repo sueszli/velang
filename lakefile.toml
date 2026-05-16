@@ -1,0 +1,21 @@
+name = "yung-lean"
+version = "0.1.0"
+defaultTargets = ["YungLean", "yung-lean"]
+lintDriver = "batteries/runLinter"
+testDriver = "Tests"
+
+[[require]]
+name = "cslib"
+scope = "leanprover"
+rev = "main"
+
+[[lean_lib]]
+name = "YungLean"
+
+[[lean_exe]]
+name = "yung-lean"
+root = "Main"
+
+[[lean_lib]]
+name = "Tests"
+root = "Tests"

@@ -61,37 +61,3 @@ For multi-step tasks, state a brief plan:
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
 These guidelines are working if: fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
-
-# Coding Guidelines
-
-Simplicity:
-
-- no code > simple code > clever code
-- more dependencies is better than more code
-- minimize indentation: guard first programming, early returns, happy path first
-- maximize for code locality: a little duplication is okay. inline small functions (<5 LoC). no module-level globals or top-level helpers unless reused in multiple places
-- avoid OOP primitives like classes and inheritance where possible
-- use `itertools` and `functools` to fold deeply nested loops
-
-Avoid LLM smells:
-
-- no trailing commas. prefer single-line imports, dicts and lists over multi-line with trailing commas. take advantage of infinite line width
-- avoid docstrings where possible. prefer tight technical comments starting with the pound `#` symbol
-- avoid unnecessary `print` statements. do not add indentation in prints with whitespaces but with `\t`
-- call code directly in `if __name__ == "__main__":` instead of defining a second `main()` function
-- import statements must always be at the top of the file
-- avoid `from __future__ import annotations` where possible
-
-Robustness:
-
-- for standalone scripts, always either use bash or UV scripts with inline dependencies
-- use `assert` statements frequently as invariants. prefer crashing over failing silently. prefer `assert` over runtime exceptions
-- maximize test coverage, without adding noise (except for standalone scripts)
-- prefer typed enums over strings for states
-- use match statements over multiple `isinstance` branches
-
-Performance:
-
-- use `@cache` where it makes sense
-- have mechanistic sympathy, design with data oriented programming best-practices
-
