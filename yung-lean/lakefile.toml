@@ -1,0 +1,10 @@
+name = "yung-lean"
+version = "0.1.0"
+defaultTargets = ["yung-lean"]
+
+[[lean_lib]]
+name = "YungLean"
+
+[[lean_exe]]
+name = "yung-lean"
+root = "Main"
