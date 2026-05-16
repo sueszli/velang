@@ -2,11 +2,11 @@ import Cslib.Algorithms.Lean.MergeSort.MergeSort
 
 open Cslib.Algorithms.Lean.TimeM
 
-namespace YungLean
+namespace Velang
 
 @[nolint docBlame topNamespace]
 def sortedList : List Nat := ⟪mergeSort [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]⟫
 
 #eval sortedList
 
-end YungLean
+end Velang

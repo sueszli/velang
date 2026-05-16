@@ -1,6 +1,6 @@
-name = "yung-lean"
+name = "velang"
 version = "0.1.0"
-defaultTargets = ["YungLean", "yung-lean"]
+defaultTargets = ["Velang", "velang"]
 lintDriver = "batteries/runLinter"
 testDriver = "Tests"
 
@@ -10,10 +10,10 @@ scope = "leanprover"
 rev = "main"
 
 [[lean_lib]]
-name = "YungLean"
+name = "Velang"
 
 [[lean_exe]]
-name = "yung-lean"
+name = "velang"
 root = "Main"
 
 [[lean_lib]]

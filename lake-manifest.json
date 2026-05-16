@@ -101,6 +101,6 @@
    "inputRev": "v4.30.0-rc2",
    "inherited": true,
    "configFile": "lakefile.toml"}],
- "name": "«yung-lean»",
+ "name": "velang",
  "lakeDir": ".lake",
  "fixedToolchain": false}

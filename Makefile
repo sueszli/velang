@@ -11,4 +11,4 @@ precommit:
 
 .PHONY: run
 run:
-	lake exe yung-lean
+	lake exe velang
