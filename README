@@ -1,3 +1,5 @@
 # velang
 
-based on: https://github.com/opencompl/veir
+toy compiler with verified intermediate representations
+
+https://github.com/opencompl/veir

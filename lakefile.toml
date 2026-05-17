@@ -6,8 +6,13 @@ testDriver = "Tests"
 
 [[require]]
 name = "cslib"
-scope = "leanprover"
-rev = "main"
+git = "https://github.com/leanprover/cslib"
+rev = "7f3660594e59dfe4ccd73ca146b5e7eca058f725"
+
+[[require]]
+name = "VeIR"
+git = "https://github.com/opencompl/veir.git"
+rev = "9b0e199d3368264d4cf901bd7583ec7e5aa76568"
 
 [[lean_lib]]
 name = "Velang"
