@@ -1,5 +1,5 @@
-# velang
+velang
 
-toy compiler with verified intermediate representations
+a toy lisp compiler with verified intermediate representations
 
-https://github.com/opencompl/veir
+built with github.com/opencompl/veir

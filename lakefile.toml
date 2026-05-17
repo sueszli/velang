@@ -1,13 +1,7 @@
 name = "velang"
 version = "0.1.0"
-defaultTargets = ["Velang", "velang"]
-lintDriver = "batteries/runLinter"
-testDriver = "Tests"
-
-[[require]]
-name = "cslib"
-git = "https://github.com/leanprover/cslib"
-rev = "7f3660594e59dfe4ccd73ca146b5e7eca058f725"
+defaultTargets = ["velang"]
+testDriver = "Spec"
 
 [[require]]
 name = "VeIR"
@@ -17,10 +11,10 @@ rev = "9b0e199d3368264d4cf901bd7583ec7e5aa76568"
 [[lean_lib]]
 name = "Velang"
 
+[[lean_lib]]
+name = "Spec"
+srcDir = "Tests"
+
 [[lean_exe]]
 name = "velang"
-root = "Main"
-
-[[lean_lib]]
-name = "Tests"
-root = "Tests"
+root = "Velang"

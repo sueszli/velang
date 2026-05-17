@@ -1,0 +1,4 @@
+; RUN: %velang %s > %t.mlir && veir-interpret %t.mlir | filecheck %s
+; 3*4 + 7 = 19 = 0x13
+(+ (* 3 4) 7)
+; CHECK: Program output: #[0x00000013#32]
